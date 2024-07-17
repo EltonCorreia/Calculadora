@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/*Tela geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+/*Formatação da tela*/
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eb1c1f69;
+}
+
+/*Display da calculadora:
+
+- Tamanho da fonte influência no tamanho do campo do display.
+
+*/
+
+#display{
+    width: 100%;
+    padding: 30px;
+    font-size: 3rem;
+    text-align: left;
+    border: none;
+    background-color: #fdd3cf;
+    color: #f18e8c;
+}
+
+/*Corpo da calculadora*/
+
+#calculadora{
+    background-color: #f2e9ee;
+    border-radius: 60px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#teclas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 50px;
+}
+
+/*Botões gerais*/
+
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: none;
+    background-color: #f2e9ee;
+    color: #19201f;
+    font-size: 2.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*Botões de operação*/
+
+.btn-operador{
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #f18e8c;
+    background-color: #fdd3cf;
+}
+
+.btn-operador:hover{
+    background-color: #e5b4b77a;
+}
+
+.btn-operador:active{
+    background-color: #f0404c56;
+}
+
+button:hover{
+    background-color: #e5b4b77a;
+}
+
+button:active{
+    background-color: #f0404c56;
+}
